@@ -1,0 +1,50 @@
+.player-overlay {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    transition: .3s opacity;
+}
+
+.player {
+ position: relative;
+}
+
+.player video {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+   
+}
+
+.player-title {
+    color: white;
+    position: absolute;
+}
+
+.player-actions {
+    position: absolute;
+    inset: 0; /* Abarcara el 100% del espacio que abarca el elmento padre, es decir el elemento relative m[as pr[oximo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 20px;
+}
+
+.player-progress {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+    z-index: 2;
+}
+
+.player-progress input {
+    flex: 1;
+}
+
+.player:hover .player-overlay{
+    opacity: 1;
+}

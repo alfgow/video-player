@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/alfgow.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">            
+            <div class="player-overlay">
+                <h2 class="player-title">Coding Muisic</h2>
+                <div class="player-actions" >
+                    <button class="button" id="backward" aria-label="retroceder 10 segundos" title="retroceder 10 segundos"></button>
+                    <button class="button" id="play" aria-label="reproducir video" title="reproducir video"></button>
+                    <button hidden class="button" id="pausa" aria-label="pausar video" title="pausar video"></button>
+                    <button class="button" id="forward" aria-label="adelantar 10 segundos" title="adelantar 10 segundos"></button>
+                </div>
+                
+                <div class="player-progress">
+                    <input id="progress" type="range" value="0" min="0" step="1">
+                </div>
+            </div>
+            <video id="video" poster="./images/poster.jpg" src="./videos/lofi.mp4" width="400"></video>
+        </div>
+    </div>
+<script src="./js/alfgow.js"></script>
+</body>
+</html>
